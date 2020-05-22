@@ -4,7 +4,7 @@ Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 require_relative('../song.rb')
 
-class BusStopTest < Minitest::Test
+class SongTest < Minitest::Test
 
     def setup
         @hit_me_baby = Song.new("Britney Spears", "Baby One More Time")
@@ -13,6 +13,10 @@ class BusStopTest < Minitest::Test
     end
 
     def test_get_artist
-        assert_equal("Journey", @song.artist)
+        assert_equal("Journey", @believin.artist)
+    end
+
+    def test_get_title
+        assert_equal("Don't Stop Believin'", @believin.title)
     end
 end
