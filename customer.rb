@@ -11,4 +11,9 @@ class Customer
         @tunefullness = tunefullness
         @booking_name = booking_name
     end
+
+
+    def reduce_wallet_balance(amount)
+        @wallet_balance -= amount
+    end
 end

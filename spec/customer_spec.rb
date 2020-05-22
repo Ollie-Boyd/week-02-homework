@@ -39,4 +39,8 @@ class CustomerTest < Minitest::Test
     def test_get_customer_booking_name
         assert_equal("Pat", @customer_cat.booking_name)
     end
+
+    def test_reduce_customer_wallet_balance
+        assert_equal(0, @customer_cat.reduce_wallet_balance(@customer_cat.wallet_balance))
+    end
 end
